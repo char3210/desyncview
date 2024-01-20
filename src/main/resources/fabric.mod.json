@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "desyncmod",
+  "version": "${version}",
+  "name": "desyncmod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/char/desyncmod"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/desyncmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.char321.desyncmod.client.DesyncmodClient"
+    ],
+    "main": [
+      "me.char321.desyncmod.Desyncmod"
+    ]
+  },
+  "mixins": [
+    "desyncmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
